@@ -1,0 +1,56 @@
+services:
+  db:
+    container_name: db
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=api
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    container_name: backend
+    build:
+      context: ./bms_backend
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - SPRING_APPLICATION_NAME=bms_backend
+      - SPRING_SECURITY_USER_NAME=pj
+      - SPRING_SECURITY_USER_PASSWORD=123654
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/api
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_SHOW_SQL=true
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./bms_frontend
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      backend:
+        condition: service_started
+    tty: true
+    command: '"/bin/sh" "-c" "curl -i -g -H\"Content-Type: application/json\" -d@book_data.json -XPOST http://backend:8080/api/books/new-books-data && npm start && /bin/sh"'
+
+volumes:
+  pgdata:

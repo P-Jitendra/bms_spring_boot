@@ -1,0 +1,144 @@
+{
+  "books_data": [
+    {
+      "BookId": 1,
+      "Title": "Don Quixote",
+      "Author": "Miguel de Cervantes",
+      "Publications": "Dover Publications, NewYork",
+      "Genre": "Action and Adventure"
+    },
+    {
+      "BookId": 2,
+      "Title": "The Adventures of Huckleberry Film",
+      "Author": "Mark Twain",
+      "Publications": "Norton, NewYork",
+      "Genre": "Action and Adventure"
+    },
+    {
+      "BookId": 3,
+      "Title": "Alice's Adventures in Wonderland",
+      "Author": "Lewis Carroll",
+      "Publications": "Palazzo Editions Ltd",
+      "Genre": "Fantasy"
+    },
+    {
+      "BookId": 4,
+      "Title": "Gulliver's Travels",
+      "Author": "Jonathan Swift",
+      "Publications": "Knopf : Distributed by Random House, NewYork",
+      "Genre": "Fantasy"
+    },
+    {
+      "BookId": 5,
+      "Title": "A tale of Two Cities",
+      "Author": "Charles Dickens",
+      "Genre": "Historical",
+      "Publications": "Knopf : Distributed by Random House, NewYork"
+    },
+    {
+      "BookId": 6,
+      "Title": "The Three Musketeers",
+      "Author": "Alexandre Dumas",
+      "Genre": "Historical",
+      "Publications": "Collector's Library, London"
+    },
+    {
+      "BookId": 7,
+      "Title": "Frankestein, or, the Modern Prometheus",
+      "Author": "Mary Shelley",
+      "Genre": "Horror",
+      "Publications": "University of California Press, Berkeley"
+    },
+    {
+      "BookId": 8,
+      "Title": "The Phantom of the Opera",
+      "Author": "Gaston Leroux",
+      "Publications": "Harper Perennial Library, New York",
+      "Genre": "Horror"
+    },
+    {
+      "BookId": 9,
+      "Title": "Pride and Prejudice",
+      "Author": "Jane Austen",
+      "Publications": "Modern Library, New York",
+      "Genre": "Romance"
+    },
+    {
+      "BookId": 10,
+      "Title": "Jane Eyre",
+      "Author": "Charlotte Bronte",
+      "Publications": "Knopf : Distributed by Random House, New York",
+      "Genre": "Romance"
+    },
+    {
+      "BookId": 11,
+      "Title": "Science Fiction",
+      "Author": "20,000 Leagues Under the Sea",
+      "Publications": "Sterling Publishing Co.,Inc., New York",
+      "Genre": "Science Fiction"
+    },
+    {
+      "BookId": 12,
+      "Title": "Fahrenheit 451",
+      "Author": "Ray Bradbury",
+      "Publications": "Ballantine Books, New York",
+      "Genre": "Science Fiction"
+    },
+    {
+      "BookId": 13,
+      "Title": "Angels & Demons",
+      "Author": "Dan Brown",
+      "Publications": "Atria Books, New York",
+      "Genre": "Thrillers"
+    },
+    {
+      "BookId": 14,
+      "Title": "The Girl with Dragon Tattoo",
+      "Author": "Stieg Larsson",
+      "Publications": "Alfred A. Knopf, New York",
+      "Genre": "Thrillers"
+    },
+    {
+      "BookId": 15,
+      "Title": "A Farewell to Arms",
+      "Author": "Ernest Hemingway",
+      "Publications": "Scribner Classics, New York",
+      "Genre": "War"
+    },
+    {
+      "BookId": 16,
+      "Title": "All Quiet on the Western Front",
+      "Author": "Erich Maria Remarque",
+      "Publications": "Vintage, London",
+      "Genre": "War"
+    },
+    {
+      "BookId": 17,
+      "Title": "Uncle Tom's Cabin",
+      "Author": "Harriet Beecher Stowe",
+      "Publications": "A.A. Knopf, New York",
+      "Genre": "Political"
+    },
+    {
+      "BookId": 18,
+      "Title": "Animal Farm",
+      "Author": "George Orwell",
+      "Publications": "Harcourt, Brace and Company, New York",
+      "Genre": "Political"
+    },
+    {
+      "BookId": 19,
+      "Title": "The Complete Sherlock Holmes",
+      "Author": "Arthur Conan Doyle",
+      "Publications": "Doubleday & Company, Inc., Garden City, New York",
+      "Genre": "Mystery/Detective"
+    },
+    {
+      "BookId": 20,
+      "Title": "The Da Vinci Code",
+      "Author": "Dan Brown",
+      "Publications": "Doubleday, New York",
+      "Genre": "Mystery/Detective"
+    }
+  ]
+}
