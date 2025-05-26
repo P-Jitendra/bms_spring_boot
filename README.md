@@ -2,7 +2,7 @@
 
 ### `Front end tech stack` : **_ReactJs_**
 
-### `Back end tech stack` : **_JAVA_**
+### `Back end tech stack` : **_SpringBoot_**
 
 ### `Database` : **_Postgres_**
 
